@@ -82,7 +82,7 @@ genre_counts = Counter(filtered_genres)
 # Get the 20 most common genres
 most_common_genres = genre_counts.most_common(20)
 
-# Visualisation: Bar Chart
+# Visualization: Bar Chart
 # Separate genres and counts for plotting
 labels, values = zip(*most_common_genres)
 
@@ -96,12 +96,12 @@ plt.figure(figsize=(9, 5), dpi=300)  # Adjust figure size and DPI for better fit
 bars = plt.bar(labels, values, color=colors[:len(labels)], edgecolor='black', alpha=0.8)  # Add edgecolor and transparency
 
 # Add title and labels 
-plt.title('Top 20 Most Common Genres', fontsize=14, fontname='Times New Roman', fontweight='bold', pad=15)  # Title in bold, slightly further from the chart
-plt.xlabel('Genres', fontsize=6, fontname='Times New Roman', fontweight='bold', labelpad=4)  # Smaller font size for labels, closer to the chart
-plt.ylabel('Frequency', fontsize=6, fontname='Times New Roman', fontweight='bold')  # Smaller font size for labels
+plt.title('Top 20 Most Common Genres', fontsize=14, fontname='Times New Roman', fontweight='bold', pad=15)  
+plt.xlabel('Genres', fontsize=6, fontname='Times New Roman', fontweight='bold', labelpad=4)  
+plt.ylabel('Frequency', fontsize=6, fontname='Times New Roman', fontweight='bold') 
 
 # Set x-ticks to be vertical
-plt.xticks(rotation=90, ha='center', fontsize=6, fontname='Times New Roman')  # Rotate to 90 degrees for vertical display
+plt.xticks(rotation=90, ha='center', fontsize=6, fontname='Times New Roman')  
 
 # Set y-ticks font to Times New Roman and smaller size
 plt.yticks(fontsize=5, fontname='Times New Roman')
@@ -109,7 +109,7 @@ plt.yticks(fontsize=5, fontname='Times New Roman')
 # Add gridlines
 plt.grid(axis='y', linestyle='--', alpha=0.7)  # Add horizontal gridlines
 
-# Use tight_layout() to make everything fit without overlap, with increased padding
+# Use tight_layout() 
 plt.tight_layout(pad=4.0)  # Increased padding
 
 # Save the chart as a high-resolution JPEG file
