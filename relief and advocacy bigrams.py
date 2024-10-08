@@ -65,16 +65,13 @@ plt.text(0.5, 1.1, 'October 2023 - October 2024', fontsize=7, fontname='Times Ne
 plt.xlabel('Bigrams', fontsize=6, fontname='Times New Roman', fontweight='bold')
 plt.ylabel('Frequency', fontsize=6, fontname='Times New Roman', fontweight='bold')
 
-# Rotate x-ticks slightly for readability
 plt.xticks(rotation=45, ha='right', fontsize=4, fontname='Times New Roman')
-
-# Adjust the font size of the numbers on the y-axis (frequencies) to 4
 plt.yticks(fontsize=4, fontname='Times New Roman')
 
 # Add gridlines to the y-axis
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
-# Use tight_layout() with increased padding for better spacing
+# Padding 
 plt.tight_layout(pad=6.0)
 
 # Save the advocacy bigram frequency chart
@@ -93,16 +90,14 @@ plt.text(0.5, 1.1, 'October 2023 - October 2024', fontsize=7, fontname='Times Ne
 plt.xlabel('Bigrams', fontsize=6, fontname='Times New Roman', fontweight='bold')
 plt.ylabel('Frequency', fontsize=6, fontname='Times New Roman', fontweight='bold')
 
-# Rotate x-ticks slightly for readability
-plt.xticks(rotation=45, ha='right', fontsize=4, fontname='Times New Roman')
 
-# Adjust the font size of the numbers on the y-axis (frequencies) to 4
+plt.xticks(rotation=45, ha='right', fontsize=4, fontname='Times New Roman')
 plt.yticks(fontsize=4, fontname='Times New Roman')
 
 # Add gridlines to the y-axis
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
-# Use tight_layout() with increased padding for better spacing
+# Padding
 plt.tight_layout(pad=6.0)
 
 # Save the relief bigram frequency chart
