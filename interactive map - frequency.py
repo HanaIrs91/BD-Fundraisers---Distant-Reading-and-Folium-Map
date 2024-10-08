@@ -77,7 +77,7 @@ continent_colors = {
     "Europe": "orange",
     "Africa": "red",
     "Asia": "purple",
-    "Oceania": "magenta",  # Set New Zealand to magenta
+    "Oceania": "magenta",  
     "Antarctica": "gray",
 }
 
@@ -96,9 +96,8 @@ def get_continent(location):
         "New Zealand": "Oceania",
         "Palestine": "Asia",
         "Arizona": "North America",
-        "France": "Europe",  # Ensuring France locations are mapped to Europe
-        "Indiana": "North America",  # Ensuring Indiana is mapped to North America
-        # Add more mappings as necessary
+        "France": "Europe",  
+        "Indiana": "North America",  
     }
     for key in continents:
         if key in location:
@@ -113,7 +112,7 @@ for location, frequency in location_counts.items():
 
     folium.CircleMarker(
         location=coords,
-        radius=frequency * 2,  # Adjust the size multiplier as needed
+        radius=frequency * 2,  
         popup=f"{location}: {frequency}",
         color=color,
         fill=True,
